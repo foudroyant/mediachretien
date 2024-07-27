@@ -276,37 +276,6 @@ const MobileMenu = ({ single, menu }) => {
         </a>
         <nav className="mean-nav">
           <ul>
-            <li className="has-dropdown active d-lg-none">
-              <a
-                href="#"
-                className="border-none"
-                onClick={() => activeMenuSet("home")}
-              >
-                Home
-                <i className="fas fa-angle-down" />
-              </a>
-              <ul className="submenu" style={activeLi("home")}>
-                <li>
-                  <Link href="/">Home 01</Link>
-                </li>
-                <li>
-                  <Link href="index-2">Home 02</Link>
-                </li>
-                <li>
-                  <Link href="index-3">Home 03</Link>
-                </li>
-                <li>
-                  <Link href="index-4">Home 04</Link>
-                </li>
-              </ul>
-              <a
-                className="mean-expand"
-                href="#"
-                onClick={() => activeMenuSet("home")}
-              >
-                <i className="far fa-plus" />
-              </a>
-            </li>
             {single ? (
               <Fragment>
                 {singleMenu.map((menu) => (
@@ -489,7 +458,7 @@ const SearchBtn = ({ setSeachToggle }) => {
 const Offcanvas = ({
   open,
   close,
-  logo = "assets/img/logo/logo.svg",
+  logo = "assets/images/2.png",
   style = "",
   single,
   menu,
@@ -509,7 +478,7 @@ const Offcanvas = ({
               <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo">
                   <Link href="/">
-                    <img src={logo} alt="logo-img" />
+                    <img src={logo} alt="logo-img" width="50" height="50" />
                   </Link>
                 </div>
                 <div className="offcanvas__close">
@@ -519,10 +488,7 @@ const Offcanvas = ({
                 </div>
               </div>
               <p className="d-none d-lg-block">
-                Ne summo dictas pertinacia nam. Illum cetero vocent ei vim, case
-                regione signiferumque vim te. Ex mea quem munere lobortis. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse
-                cillum.
+              🌟 Découvrez le message de Matthieu 25:6 avec 162 prédications écrites et audio. 📖 Plongez dans des textes sacrés et écoutez des messages inspirants, disponibles gratuitement. Rejoignez-nous, abonnez-vous et partagez la lumière !
               </p>
               <MobileMenu single={single} menu={menu} />
 
@@ -535,7 +501,7 @@ const Offcanvas = ({
                     </div>
                     <div className="offcanvas__contact-text">
                       <a target="_blank" href="#">
-                        Main Street, Melbourne, Australia
+                        +50 pays
                       </a>
                     </div>
                   </li>
@@ -546,7 +512,7 @@ const Offcanvas = ({
                     <div className="offcanvas__contact-text">
                       <a href="mailto:info@azent.com">
                         <span className="mailto:info@azent.com">
-                          info@azent.com
+                          contact@mediachretien.com
                         </span>
                       </a>
                     </div>
@@ -555,41 +521,27 @@ const Offcanvas = ({
                     <div className="offcanvas__contact-icon mr-15">
                       <i className="fal fa-clock" />
                     </div>
-                    <div className="offcanvas__contact-text">
-                      <a target="_blank" href="#">
-                        Mod-friday, 09am -05pm
-                      </a>
-                    </div>
                   </li>
                   <li className="d-flex align-items-center">
                     <div className="offcanvas__contact-icon mr-15">
                       <i className="far fa-phone" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="tel:+11002345909">+11002345909</a>
+                      <a href="tel:+242064837637">+242 06 483 76 37</a>
                     </div>
                   </li>
                 </ul>
                 <div className="header-button mt-4">
                   <Link href="contact" className="theme-btn text-center">
                     <span>
-                      Contact Us
+                      Contactez-nous
                       <i className="fas fa-chevron-right" />
                     </span>
                   </Link>
                 </div>
                 <div className="social-icon d-flex align-items-center">
-                  <a href="#">
+                  <a href="https://www.facebook.com/profile.php?id=61562269797608&mibextid=ZbWKwL">
                     <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-youtube" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
                   </a>
                 </div>
               </div>

@@ -366,7 +366,7 @@ const page = () => {
                       Le ministère de la langue inconnue
                     </span>
                     <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                      Sans prophète vivant<br />
+                      Sans prophète vivant <br />
                       Pas de salut.
                     </h2>
                   </div>
