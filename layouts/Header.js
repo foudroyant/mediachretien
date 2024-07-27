@@ -511,15 +511,10 @@ const Offcanvas = ({
                     </div>
                     <div className="offcanvas__contact-text">
                       <a href="mailto:info@azent.com">
-                        <span className="mailto:info@azent.com">
+                        <span className="mailto:contact@mediachretien.com">
                           contact@mediachretien.com
                         </span>
                       </a>
-                    </div>
-                  </li>
-                  <li className="d-flex align-items-center">
-                    <div className="offcanvas__contact-icon mr-15">
-                      <i className="fal fa-clock" />
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
