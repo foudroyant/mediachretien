@@ -3,8 +3,8 @@ import Layout from "@/layouts/Layout";
 import Link from "next/link";
 const page = () => {
   return (
-    <Layout>
-      <Breadcrumb pageName="Standard Blog" />
+    <Layout footer={2} header={4} single={true}>
+      <Breadcrumb pageName="Le Blog MC" />
       <section className="blog-wrapper news-wrapper section-padding border-bottom">
         <div className="container">
           <div className="news-area">
@@ -15,143 +15,48 @@ const page = () => {
                     <div
                       className="post-featured-thumb bg-cover"
                       style={{
-                        backgroundImage: 'url("assets/img/news/post-1.jpg")',
+                        backgroundImage: 'url("assets/images/post-songe.jpg")',
                       }}
                     >
-                      <div className="post-date">
+                      {/*<div className="post-date">
                         <h4>
-                          25 <br />
-                          <span>Dec</span>
+                          08 <br />
+                          <span>Juillet</span>
                         </h4>
-                      </div>
+                    </div>*/}
+
                     </div>
                     <div className="post-content">
                       <div className="post-meta">
-                        <span>
+                        {/*<span>
                           <i className="fal fa-comments" />
                           35 Comments
-                        </span>
+                        </span>*/}
                         <span>
                           <i className="fal fa-calendar-alt" />
-                          24th March 2024
+                          08 Juillet 2023
                         </span>
                       </div>
                       <h2>
                         <Link href="news-details">
-                          The whimsically named Egg Canvas brainchesiko
+                          Instructions sur le prophétisme, les songes et visions
                         </Link>
                       </h2>
                       <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but majority have suffered teration in some
-                        form, by injected humour, or randomised words which
-                        don't look even slight believable. If you are going to
-                        use a passage of Lorem Ipsum.
+                      Les songes et visions sont des codes de la route et des panneaux de signalisation dans la marche des humains vers Dieu. Un songe peut vouloir dire : « Attention sens interdit ! Attention, feu rouge ! Obligation de faire demi-tour avant le panneau ! Attention pont coupé ! Attention route fermée ! Attention fin de route dans un trou ! ».
                       </p>
                       <Link
                         href="news-details"
                         className="theme-btn mt-4 line-height"
                       >
                         <span>
-                          READ MORE <i className="fas fa-chevron-right" />
+                          LIRE PLUS <i className="fas fa-chevron-right" />
                         </span>
                       </Link>
                     </div>
                   </div>
-                  <div className="single-blog-post">
-                    <div
-                      className="post-featured-thumb bg-cover"
-                      style={{
-                        backgroundImage: 'url("assets/img/news/post-2.jpg")',
-                      }}
-                    >
-                      <div className="post-date">
-                        <h4>
-                          15 <br />
-                          <span>Dec</span>
-                        </h4>
-                      </div>
-                    </div>
-                    <div className="post-content">
-                      <div className="post-meta">
-                        <span>
-                          <i className="fal fa-comments" />
-                          35 Comments
-                        </span>
-                        <span>
-                          <i className="fal fa-calendar-alt" />
-                          24th March 2024
-                        </span>
-                      </div>
-                      <h2>
-                        <Link href="news-details">
-                          Mastering the Art of Data Analysis and Visualization
-                        </Link>
-                      </h2>
-                      <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but majority have suffered teration in some
-                        form, by injected humour, or randomised words which
-                        don't look even slight believable. If you are going to
-                        use a passage of Lorem Ipsum.
-                      </p>
-                      <Link
-                        href="news-details"
-                        className="theme-btn mt-4 line-height"
-                      >
-                        <span>
-                          READ MORE <i className="fas fa-chevron-right" />
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="single-blog-post">
-                    <div
-                      className="post-featured-thumb bg-cover"
-                      style={{
-                        backgroundImage: 'url("assets/img/news/post-3.jpg")',
-                      }}
-                    >
-                      <div className="post-date">
-                        <h4>
-                          11 <br />
-                          <span>Dec</span>
-                        </h4>
-                      </div>
-                    </div>
-                    <div className="post-content">
-                      <div className="post-meta">
-                        <span>
-                          <i className="fal fa-comments" />
-                          35 Comments
-                        </span>
-                        <span>
-                          <i className="fal fa-calendar-alt" />
-                          24th March 2024
-                        </span>
-                      </div>
-                      <h2>
-                        <Link href="news-details">
-                          The whimsically named Egg Canvas brainchesiko
-                        </Link>
-                      </h2>
-                      <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but majority have suffered teration in some
-                        form, by injected humour, or randomised words which
-                        don't look even slight believable. If you are going to
-                        use a passage of Lorem Ipsum.
-                      </p>
-                      <Link
-                        href="news-details"
-                        className="theme-btn mt-4 line-height"
-                      >
-                        <span>
-                          READ MORE <i className="fas fa-chevron-right" />
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
+                  
+                  
                   <div className="single-blog-post quote-post format-quote">
                     <div className="post-content text-white bg-cover">
                       <div className="quote-content">
@@ -160,25 +65,26 @@ const page = () => {
                         </div>
                         <div className="quote-text">
                           <h2>
-                            Excepteur sint occaecat cupida tat non proident,
-                            sunt in.
+                          Vous ne pouvez pas progresser avec un prophète mort, avec un cadavre. Dieu est vivant !
                           </h2>
                           <div className="post-meta">
                             <span>
-                              <i className="fal fa-comments" />
-                              35 Comments
+                              <i className="fal fa-book" />
+                              Le Message de Matthieu 25:6
                             </span>
                             <span>
-                              <i className="fal fa-calendar-alt" />
-                              24th March 2024
+                              <i className="fal fa-book-alt" />
+                              Kacou 66:41
                             </span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
                 </div>
-                <div className="page-nav-wrap mt-5 text-center">
+
+                {/*<div className="page-nav-wrap mt-5 text-center">
                   <ul>
                     <li>
                       <a className="page-numbers" href="#">
@@ -216,11 +122,14 @@ const page = () => {
                       </a>
                     </li>
                   </ul>
-                </div>
+                    </div>*/}
+
               </div>
+
+
               <div className="col-12 col-lg-4">
                 <div className="main-sidebar">
-                  <div className="single-sidebar-widget">
+                  {/*<div className="single-sidebar-widget">
                     <div className="wid-title">
                       <h3>Search</h3>
                     </div>
@@ -232,72 +141,36 @@ const page = () => {
                         </button>
                       </form>
                     </div>
-                  </div>
+                  </div>*/}
+
                   <div className="single-sidebar-widget">
                     <div className="wid-title">
-                      <h3>Popular Feeds</h3>
+                      <h3>Populaires</h3>
                     </div>
                     <div className="popular-posts">
                       <div className="single-post-item">
                         <div
                           className="thumb bg-cover"
                           style={{
-                            backgroundImage: 'url("assets/img/news/pp1.jpg")',
+                            backgroundImage: 'url("assets/images/post-songe.jpg")',
                           }}
                         />
                         <div className="post-content">
                           <h5>
                             <Link href="news-details">
-                              Keep your business safe and ensure high
+                            Instructions sur le prophétisme, les songes et visions
                             </Link>
                           </h5>
                           <div className="post-date">
                             <i className="far fa-calendar-alt" />
-                            24th March 2024
-                          </div>
-                        </div>
-                      </div>
-                      <div className="single-post-item">
-                        <div
-                          className="thumb bg-cover"
-                          style={{
-                            backgroundImage: 'url("assets/img/news/pp2.jpg")',
-                          }}
-                        />
-                        <div className="post-content">
-                          <h5>
-                            <Link href="news-details">
-                              We’ve been a strategy thought leader for nearly
-                            </Link>
-                          </h5>
-                          <div className="post-date">
-                            <i className="far fa-calendar-alt" />
-                            25th March 2024
-                          </div>
-                        </div>
-                      </div>
-                      <div className="single-post-item">
-                        <div
-                          className="thumb bg-cover"
-                          style={{
-                            backgroundImage: 'url("assets/img/news/pp3.jpg")',
-                          }}
-                        />
-                        <div className="post-content">
-                          <h5>
-                            <Link href="news-details">
-                              This week’s top stories and about It
-                            </Link>
-                          </h5>
-                          <div className="post-date">
-                            <i className="far fa-calendar-alt" />
-                            26th March 2024
+                            08 Juillet 2023
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="single-sidebar-widget">
+
+                  {/*<div className="single-sidebar-widget">
                     <div className="wid-title">
                       <h3>Categories</h3>
                     </div>
@@ -335,30 +208,23 @@ const page = () => {
                         </li>
                       </ul>
                     </div>
-                  </div>
+                        </div>*/}
+
                   <div className="single-sidebar-widget">
                     <div className="wid-title">
-                      <h3>Never Miss News</h3>
+                      <h3>Ne manquez pas de contenus</h3>
                     </div>
                     <div className="social-link">
-                      <a href="#">
+                      <a href="https://www.facebook.com/profile.php?id=61562269797608&mibextid=ZbWKwL">
                         <i className="fab fa-facebook-f" />
                       </a>
-                      <a href="#">
-                        <i className="fab fa-twitter" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-instagram" />
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-linkedin-in" />
-                      </a>
-                      <a href="#">
+                      <a href="https://www.youtube.com/@lecridematthieu25v6">
                         <i className="fab fa-youtube" />
                       </a>
                     </div>
                   </div>
-                  <div className="single-sidebar-widget">
+
+                  {/*<div className="single-sidebar-widget">
                     <div className="wid-title">
                       <h3>Popular Tags</h3>
                     </div>
@@ -371,7 +237,8 @@ const page = () => {
                       <Link href="news-details">Digital</Link>
                       <Link href="news-details">Cyber</Link>
                     </div>
-                  </div>
+                      </div>*/}
+
                 </div>
               </div>
             </div>

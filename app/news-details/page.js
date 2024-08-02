@@ -3,7 +3,7 @@ import Layout from "@/layouts/Layout";
 import Link from "next/link";
 const page = () => {
   return (
-    <Layout>
+    <Layout footer={2} header={4} single={true}>
       <Breadcrumb pageName="Blog Details" />
       <section className="blog-wrapper news-wrapper section-padding border-bottom">
         <div className="container">
@@ -14,8 +14,7 @@ const page = () => {
                   <div className="single-blog-post post-details mt-0">
                     <div className="post-content pt-0">
                       <h2 className="mt-0">
-                        Mind-Blowing Reasons Why Agency Is Using This Technique
-                        For Exposure.
+                      Instructions sur le prophétisme, les songes et visions
                       </h2>
                       <div className="post-meta mt-3">
                         <span>
