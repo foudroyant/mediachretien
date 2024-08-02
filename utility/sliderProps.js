@@ -186,7 +186,7 @@ export const sliderProps = {
     ],
   },
   testimonialCarouselActive: {
-    autoplay: true,
+    //autoplay: true,
     autoplaySpeed: 2000,
     speed: 500,
     arrows: false,

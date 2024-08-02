@@ -28,218 +28,21 @@ const Nav = ({ single, menu }) => {
   const singleMenu = menu
     ? menu
     : [
-        { id: 1, href: "about", title: "About" },
-        { id: 2, href: "service", title: "Service" },
-        { id: 3, href: "team", title: "Team" },
-        { id: 4, href: "blog", title: "Blog" },
-        { id: 5, href: "contact", title: "Contact" },
+        //{ id: 1, href: "about", title: "About" },
+        //{ id: 2, href: "service", title: "Service" },
+        //{ id: 3, href: "team", title: "Team" },
+        { id: 4, href: "/news", title: "Blog" },
+        //{ id: 5, href: "contact", title: "Contact" },
       ];
   return (
     <Fragment>
-      {single ? (
         <ul>
-          
-          <li className="has-dropdown active d-lg-none">
-            <a href="team" className="border-none">
-              Home
-              <i className="fas fa-angle-down" />
-            </a>
-            <ul className="submenu">
-              <li>
-                <Link href="index">Home 01</Link>
-              </li>
-              <li>
-                <Link href="index-2">Home 02</Link>
-              </li>
-              <li>
-                <Link href="index-3">Home 03</Link>
-              </li>
-            </ul>
-          </li>
           {singleMenu.map((menu) => (
             <li key={menu.id}>
               <a href={`${menu.href}`}>{menu.title}</a>
             </li>
           ))}
         </ul>
-      ) : (
-        <ul>
-          <li className="has-dropdown active menu-thumb">
-            <Link href="/">
-              Home
-              <i className="fas fa-angle-down" />
-            </Link>
-            <ul className="submenu has-home-menu">
-              <li className="border-none">
-                <div className="row g-4">
-                  <div className="col-lg-3 home-menu">
-                    <div className="home-menu-thumb">
-                      <img src="assets/img/header/home-1.jpg" alt="img" />
-                      <div className="demo-button">
-                        <Link href="/" className="theme-btn">
-                          <span>Multi Page</span>
-                        </Link>
-                        <Link href="index-one-page" className="theme-btn">
-                          <span>One Page</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="home-menu-content text-center">
-                      <h4 className="home-menu-title">Home 01</h4>
-                    </div>
-                  </div>
-                  <div className="col-lg-3  home-menu">
-                    <div className="home-menu-thumb mb-15">
-                      <img src="assets/img/header/home-2.jpg" alt="img" />
-                      <div className="demo-button">
-                        <Link href="index-2" className="theme-btn">
-                          <span>Multi Page</span>
-                        </Link>
-                        <Link href="index-two-page" className="theme-btn">
-                          <span>One Page</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="home-menu-content text-center">
-                      <h4 className="home-menu-title">Home 02</h4>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 home-menu">
-                    <div className="home-menu-thumb mb-15">
-                      <img src="assets/img/header/home-3.jpg" alt="img" />
-                      <div className="demo-button">
-                        <Link href="index-3" className="theme-btn">
-                          <span>Multi Page</span>
-                        </Link>
-                        <Link href="index-three-page" className="theme-btn">
-                          <span>One Page</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="home-menu-content text-center">
-                      <h4 className="home-menu-title">Home 03</h4>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 home-menu">
-                    <div className="home-menu-thumb mb-15">
-                      <img src="assets/img/header/home-4.jpg" alt="img" />
-                      <div className="demo-button">
-                        <Link href="index-4" className="theme-btn">
-                          <span>Multi Page</span>
-                        </Link>
-                        <Link href="index-four-page" className="theme-btn">
-                          <span>One Page</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="home-menu-content text-center">
-                      <h4 className="home-menu-title">Home 04</h4>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li className="has-dropdown active d-lg-none">
-            <Link href="team" className="border-none">
-              Home
-              <i className="fas fa-angle-down" />
-            </Link>
-            <ul className="submenu">
-              <li>
-                <Link href="/">Home 01</Link>
-              </li>
-              <li>
-                <Link href="index-2">Home 02</Link>
-              </li>
-              <li>
-                <Link href="index-3">Home 03</Link>
-              </li>
-              <li>
-                <Link href="index-4">Home 04</Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link href="about">About</Link>
-          </li>
-          <li>
-            <Link href="service">
-              Services <i className="fas fa-angle-down" />
-            </Link>
-            <ul className="submenu">
-              <li>
-                <Link href="service">Services</Link>
-              </li>
-              <li>
-                <Link href="service-details">Service Details</Link>
-              </li>
-            </ul>
-          </li>
-          <li className="has-dropdown">
-            <Link href="news">
-              Pages
-              <i className="fas fa-angle-down" />
-            </Link>
-            <ul className="submenu">
-              <li className="has-dropdown">
-                <Link href="project">
-                  Projects
-                  <i className="fas fa-angle-down" />
-                </Link>
-                <ul className="submenu">
-                  <li>
-                    <Link href="project">Projects One</Link>
-                  </li>
-                  <li>
-                    <Link href="project-2">Projects Two</Link>
-                  </li>
-                  <li>
-                    <Link href="project-details">Project Details</Link>
-                  </li>
-                </ul>
-              </li>
-              <li className="has-dropdown">
-                <Link href="team">
-                  Team
-                  <i className="fas fa-angle-down" />
-                </Link>
-                <ul className="submenu">
-                  <li>
-                    <Link href="team">Team</Link>
-                  </li>
-                  <li>
-                    <Link href="team-details">Team Details</Link>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Link href="faq">Faq's</Link>
-              </li>
-              <li>
-                <Link href="404">404 Page</Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link href="news">
-              Blog
-              <i className="fas fa-angle-down" />
-            </Link>
-            <ul className="submenu">
-              <li>
-                <Link href="news">Blog</Link>
-              </li>
-              <li>
-                <Link href="news-details">Blog Details</Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link href="contact">Contact</Link>
-          </li>
-        </ul>
-      )}
     </Fragment>
   );
 };
@@ -258,11 +61,7 @@ const MobileMenu = ({ single, menu }) => {
   const singleMenu = menu
     ? menu
     : [
-        { id: 1, href: "about", title: "About" },
-        { id: 2, href: "service", title: "Service" },
-        { id: 3, href: "team", title: "Team" },
-        { id: 4, href: "blog", title: "Blog" },
-        { id: 5, href: "contact", title: "Contact" },
+        { id: 1, href: "/blog", title: "Blog" },
       ];
   return (
     <div className="mobile-menu fix mb-3 mean-container d-block d-xl-none">
@@ -1036,7 +835,7 @@ const Header4 = ({ single }) => {
     //{ id: 1, href: "about", title: "About" },
     //{ id: 2, href: "service", title: "Service" },
     //{ id: 3, href: "team", title: "Team" },
-    //{ id: 4, href: "blog", title: "Blog" },
+    { id: 4, href: "/news", title: "Blog" },
   ];
   return (
     <Fragment>
@@ -1127,7 +926,7 @@ const DefaultHeader = ({ single }) => {
             <div className="top-left">
               <ul className="contact-list">
                 <li>
-                  <span>Call</span>Consult With It Advisor?{" "}
+                  <span>Appel</span>Consult With It Advisor?{" "}
                   <Link href="contact">Click Now</Link>
                 </li>
                 <li>
@@ -1205,7 +1004,7 @@ const DefaultHeader = ({ single }) => {
                   <div className="header-button">
                     <Link href="contact" className="theme-btn">
                       <span>
-                        contact us
+                        Nous contacter
                         <i className="fas fa-chevron-right" />
                       </span>
                     </Link>

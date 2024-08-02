@@ -611,9 +611,9 @@ condamnent jamais <br /> et ne pratiquent pourtant pas dans leurs églises et re
       <section className="news-section fix section-padding pt-0">
         <div className="container">
           <div className="section-title">
-            <span className="wow fadeInUp">Le blog Média Chrétien</span>
+            <Link href="/news" ><span className="wow fadeInUp">Le blog Média Chrétien</span></Link>
             <h2 className="wow fadeInUp" data-wow-delay=".3s">
-              Bientot disponible...
+              Disponible
             </h2>
           </div>
           {/*<div className="row">
